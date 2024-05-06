@@ -13,7 +13,6 @@ body {
     z-index: 9999; /* 確保圖片在最上層 */
 }
 
-
 header {
     color: yellow;
     padding: 20px;
