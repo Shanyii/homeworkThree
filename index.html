@@ -23,6 +23,28 @@
 
     <main>
         <img src="img/dec.jpg" alt="Decoration Image" class="decoration">
+        <!-- 引入音樂播放器 -->
+        <audio id="backgroundMusic" loop>
+            <source src="sounds/tech.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const decorationImg = document.querySelector('.decoration');
+                const audio = new Audio('sounds/tech.mp3');
+                let isPlaying = false;
+
+                decorationImg.addEventListener('click', function() {
+                    if (!isPlaying) {
+                        audio.play();
+                        isPlaying = true;
+                    } else {
+                        audio.pause();
+                        isPlaying = false;
+                    }
+                });
+            });
+
+        </script>
         <section class="landing">
             <p>There are some mistakes. Please log in to proceed.</p>
             <a href="login.html" class="btn">Login</a>

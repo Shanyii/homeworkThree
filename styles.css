@@ -3,10 +3,11 @@ body {
     background-size: 100%; /* 調整背景圖片大小以填滿整個視窗 */
 }
 .decoration {
+    cursor: pointer;
     position: fixed;
     top: 20px;
     right: 20px;
-    max-width: 10%; /* 調整圖片最大寬度 */
+    max-width: 13%; /* 調整圖片最大寬度 */
     height: auto; /* 保持原始高度比例 */
     border-radius: 5%; /* 圖片圓角 */
     z-index: 9999; /* 確保圖片在最上層 */
