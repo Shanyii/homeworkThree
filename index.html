@@ -43,6 +43,19 @@
                     }
                 });
             });
+            document.addEventListener('DOMContentLoaded', function() {
+                const decorationImg = document.querySelector('.decoration');
+
+                // 点击事件监听器
+                decorationImg.addEventListener('click', function() {
+                    // 切换旋转类
+                    decorationImg.classList.toggle('rotate');
+
+                    // 播放音乐
+                    const audio = new Audio('sounds/tech.mp3');
+                    audio.play();
+                });
+            });
 
         </script>
         <section class="landing">

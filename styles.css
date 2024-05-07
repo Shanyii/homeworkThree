@@ -12,6 +12,19 @@ body {
     border-radius: 5%; /* 圖片圓角 */
     z-index: 9999; /* 確保圖片在最上層 */
 }
+.rotate {
+    animation: rotateImage 9s linear infinite; /* 应用旋转动画 */
+}
+
+/* 定义旋转动画 */
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 header {
     color: yellow;
