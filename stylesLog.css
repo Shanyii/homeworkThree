@@ -17,6 +17,17 @@ header {
 .menu-link:hover {
     text-decoration: underline; /* 滑鼠懸停時顯示下劃線 */
 }
+.additional-options {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.additional-options a {
+    color: black; /* 將額外選項文字顏色設置為黑色 */
+    font-size: 12px; /* 设置链接文字大小为12px */
+    text-decoration: none; /* 移除連結的下劃線 */
+    margin-right: 5px; /* 增加右邊距 */
+}
 
 nav ul {
     list-style-type: none;
