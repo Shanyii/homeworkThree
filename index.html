@@ -32,30 +32,33 @@
                 const decorationImg = document.querySelector('.decoration');
                 const audio = new Audio('sounds/tech.mp3');
                 let isPlaying = false;
-
-                decorationImg.addEventListener('click', function() {
-                    if (!isPlaying) {
-                        audio.play();
-                        isPlaying = true;
-                    } else {
-                        audio.pause();
-                        isPlaying = false;
-                    }
-                });
-            });
-            document.addEventListener('DOMContentLoaded', function() {
-                const decorationImg = document.querySelector('.decoration');
+                let isRotating = false;
 
                 // 点击事件监听器
                 decorationImg.addEventListener('click', function() {
-                    // 切换旋转类
-                    decorationImg.classList.toggle('rotate');
+                    if (!isPlaying) {
+                        // 开始播放音乐
+                        audio.play();
+                        isPlaying = true;
+                    } else {
+                        // 暂停音乐
+                        audio.pause();
+                        isPlaying = false;
+                    }
 
-                    // 播放音乐
-                    const audio = new Audio('sounds/tech.mp3');
-                    audio.play();
+                    // 切换旋转状态
+                    if (!isRotating) {
+                        // 开始旋转
+                        decorationImg.classList.add('rotate');
+                        isRotating = true;
+                    } else {
+                        // 停止旋转
+                        decorationImg.classList.remove('rotate');
+                        isRotating = false;
+                    }
                 });
             });
+
 
         </script>
         <section class="landing">
