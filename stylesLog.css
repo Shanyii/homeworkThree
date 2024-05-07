@@ -7,8 +7,10 @@ body {
 
 header {
     color: darkred;
-    padding: 20px;
+    padding: 40px;
+    left: auto;
 }
+
 .menu-link {
     color: #fff; /* 將連結文字顏色設置為白色 */
     text-decoration: none; /* 移除連結的下劃線 */
@@ -24,9 +26,23 @@ header {
 
 .additional-options a {
     color: black; /* 將額外選項文字顏色設置為黑色 */
-    font-size: 12px; /* 设置链接文字大小为12px */
+    font-size: 14px; /* 设置链接文字大小为12px */
     text-decoration: none; /* 移除連結的下劃線 */
     margin-right: 5px; /* 增加右邊距 */
+}
+
+input[type="submit"] {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #460000;
 }
 
 nav ul {
@@ -42,23 +58,10 @@ nav ul li {
 main {
     padding: 20px;
 }
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-}
+
 .landing {
     text-align: center;
     margin-top: 50px;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
 }
 .login-container {
     display: flex;
@@ -79,6 +82,7 @@ input[type="submit"]:hover {
     background-color: #460000;
 }
 
+
 .login-form {
     width: 300px;
     padding: 20px;
@@ -88,6 +92,7 @@ input[type="submit"]:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
     margin-right: 20px; /* 調整表單和圖片之間的間距 */
 }
+
 input[type="text"],
 input[type="password"] {
     width: 100%;
